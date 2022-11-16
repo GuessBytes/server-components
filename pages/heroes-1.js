@@ -5,7 +5,7 @@ export default function Heroes() {
     const [heroes, setHeroes] = useState([]);
 
     useState(() => {
-        fetch(process.env.NEXT_PUBLIC_API_URL + '/api/heroes')
+        fetch('/api/heroes')
             .then(r => r.json()).then(data => {
                 setHeroes(data);
             })

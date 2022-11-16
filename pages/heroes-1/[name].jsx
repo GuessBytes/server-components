@@ -9,7 +9,7 @@ export default function HeroDetails() {
 
     useEffect(() => {
         if (router.isReady) {
-            fetch(process.env.NEXT_PUBLIC_API_URL + '/api/hero?hero=' + router.query.name)
+            fetch('/api/hero?hero=' + router.query.name)
                 .then(r => r.json())
                 .then(data => {
                     setHero(data);
