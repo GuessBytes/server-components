@@ -1,7 +1,7 @@
 import axios from "axios";
 import Link from "next/link";
 
-export default async function CarsData() {
+export default async function ComicsData() {
     const heroes = await getData();
 
     return (
